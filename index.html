@@ -9,9 +9,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header class="">
+    <header class="sm:container sm:mx-auto" >
         <nav>
-            <div class="navbar bg-base-100">
+            <div class="navbar bg-base-100 p-8">
                 <div class="navbar-start">
                   <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -25,8 +25,8 @@
                       <li><a>Contact</a></li>
                     </ul>
                   </div>
-                  <img class="absolute w-20 pt-7" src="Images/Hockey logo.png" alt="">
-                  <h1 class="text-xl pl-24">HOCKEY's CLUB</h1>
+                  <!-- <img class="absolute w-20 sm:hidden pt-7" src="Images/Hockey logo.png" alt=""> -->
+                  <h1 class="text-xl">HOCKEY's CLUB</h1>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
@@ -37,14 +37,119 @@
                     <li><a>Contact</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end">
-                  <a class="btn">Get Ticket</a>
+                <div class="navbar-end space-x-4">
+                  <img class="w-6" src="Images/icons8-search-50.png" alt="">
+                  <a class="btn btn-outline btn-warning">Get Ticket</a>
                 </div>
               </div>
         </nav>
+        <div class="carousel ">
+          <div id="item1" class="carousel-item w-full">
+            <img src="Images/1.png" class="" />
+          </div> 
+          <div id="item2" class="carousel-item w-full">
+            <img src="Images/2.jpg" class="" />
+          </div> 
+          <div id="item3" class="carousel-item w-full">
+            <img src="Images/3.jpg" class="" />
+          </div> 
+          <div id="item4" class="carousel-item w-full">
+            <img src="Images/4.jpg" class="" />
+          </div>
+        </div> 
+        <div class="flex justify-center w-full py-2 gap-2">
+          <a href="#item1" class="btn btn-xs">1</a> 
+          <a href="#item2" class="btn btn-xs">2</a> 
+          <a href="#item3" class="btn btn-xs">3</a> 
+          <a href="#item4" class="btn btn-xs">4</a>
+        </div>
     </header>
-    <main>
-
+    <main class="sm:container sm:mx-auto">
+      <section>
+       <div class="pt-5">
+        <hr>
+       </div>
+        <div class="text-center justify-center p-14">
+          <h1 class="font-serif font-bold text-xl">Professional Hockeys Club</h1>
+          <p class="font-serif text-sm text-blue-600/50">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        </div>
+        <div class="items-center justify-around text-center lg:flex">
+          <div>
+            <div class="radial-progress" style="--value:87;" role="progressbar">87%</div>
+            <div> 
+              <p class="text-sm font-black font-bold">Prayer Facility</p>
+              <p class="text-sm text-slate-500">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+          </div>
+          <div>
+            <div class="radial-progress" style="--value:95;" role="progressbar">95%</div>
+            <div>
+              <p class="text-sm font-black font-bold">Prayer Facility</p>
+              <p class="text-sm text-slate-500">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+          </div>
+         <div>
+          <div class="radial-progress" style="--value:90;" role="progressbar">90%</div>
+          <div>
+            <p class="text-sm font-black font-bold">Prayer Facility</p>
+              <p class="text-sm text-slate-500">Amet consectetur. Condimentum dignissim adipiscing .</p>
+          </div>
+         </div>
+          <div>
+            <div class="radial-progress" style="--value:80;" role="progressbar">80%</div>
+            <div>
+              <p class="text-sm font-black font-bold">Prayer Facility</p>
+              <p class="text-sm text-slate-500">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+          </div>
+        </div>
+        <div class="pt-5">
+          <hr>
+         </div>
+      </section>
+      <section>
+        <div class="text-center justify-center p-14">
+          <h1 class="font-serif font-bold text-xl">Program Sections</h1>
+          <p class="font-serif text-sm text-blue-600/50">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        </div>
+        <div>
+          <div class="flex space-x-5 ">
+            <div class="card w-[573px] bg-base-100 shadow-xl image-full">
+              <figure><img src="Images/a.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title">Junior Program</h2>
+                <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                  enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                <div class="card-actions justify-start">
+                  <button class="btn btn-outline btn-warning">Register Now!</button>
+                </div>
+              </div>
+            </div>
+            <div class="card w-[573px] bg-base-100 shadow-xl image-full">
+              <figure><img src="Images/b.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title">Teenager Program</h2>
+                <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                  enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                <div class="card-actions justify-start">
+                  <button class="btn btn-outline btn-warning">Register Now!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card w-[1170px] bg-base-100 shadow-xl image-full pt-5">
+            <figure><img src="Images/c.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Professional Program</h2>
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+              <div class="card-actions justify-start">
+                <button class="btn btn-outline btn-warning">Register Now!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
 
